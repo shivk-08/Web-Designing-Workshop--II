@@ -1,13 +1,12 @@
-import './Student.css'
-
 function Student(props) {
   return (
-    <div className="card">
-      <h2>{props.name}</h2>
+    <div>
+      <p>Name: {props.name}</p>
       <p>Course: {props.course}</p>
       <p>Marks: {props.marks}</p>
+      <hr />
     </div>
-  )
+  );
 }
 
-export default Student
+export default Student;
