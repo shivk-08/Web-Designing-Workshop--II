@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Shopping Website</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>🛒 ShopEasy</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#wishlist">Wishlist</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <button id="themeBtn">🌙 Dark Mode</button>
+            <button class="cart-btn">
+                🛒 Cart <span id="cartCount">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <h1>Welcome to ShopEasy</h1>
+        <p>Your One-Stop Online Shopping Destination</p>
+
+        <div class="search-box">
+            <input type="text"
+                   id="searchInput"
+                   placeholder="Search products...">
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <h2>Browse Categories</h2>
+
+        <div class="filter-buttons">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="laptop">Laptops</button>
+            <button class="filter-btn" data-category="smartphone">Smartphones</button>
+            <button class="filter-btn" data-category="tablet">Tablets</button>
+            <button class="filter-btn" data-category="watch">Smart Watches</button>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products-section" id="products">
+
+        <h2>Featured Products</h2>
+
+        <div class="products-grid">
+
+            <!-- Laptop -->
+            <div class="product-card" data-category="laptop">
+                <img src="https://p1-ofp.static.pub/medias/26022716142_ThinkBook14G6IRL_202309141142381752581928566.png">
+                <h3>ThinkBook 14 </h3>
+                <p class="price">₹72,390</p>
+                <p> Intel i7, 16GB RAM, 512GB SSD</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <div class="product-buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="laptop">
+                <img src="https://p1-ofp.static.pub/medias/26050595576_LOQ15IRX9WHBKLTLunaGreyIMG_202309261024281728324087866.png">
+                <h3>Lenovo LOQ Gen 9</h3>
+                <p class="price">₹65,490</p>
+                <p>Lenovo LOQ Gen 9 - AMD Ryzen 5</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <div class="product-buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+
+            <!-- Smartphone -->
+
+            <div class="product-card" data-category="smartphone">
+                <img src="https://m.media-amazon.com/images/I/61Io5-ojWUL._SX569_.jpg">
+                <h3>OnePlus Nord CE4 Lite</h3>
+                <p class="price">₹15,999</p>
+                <p>OnePlus 8 GB,128G Snapdragon	2.2 GHz</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                </div>
+
+                <div class="product-buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="smartphone">
+                <img src="https://m.media-amazon.com/images/I/41X9qNxoJKL._SY300_SX300_QL70_FMwebp_.jpg">
+                <h3>Samsung Galaxy S24 Ultra</h3>
+                <p class="price">₹85,999</p>
+                <p>Titanium Gray 12GB RAM | 512GB Storage</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <div class="product-buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+
+            <!-- Tablet -->
+            <div class="product-card" data-category="tablet">
+                <img src="https://m.media-amazon.com/images/I/41lZevqa8sL._SY300_SX300_QL70_FMwebp_.jpg">
+                <h3>Samsung Galaxy Tab S9 FE</h3>
+                <p class="price">₹26,999</p>
+                <p> RAM 6 GB, ROM 128 GB Expandable</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <div class="product-buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="tablet">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR02nnWKGohfTdAy3mrI-_PloHnFpvRktLB-WyS0w_jlXv1MJ_Jh57WlNwtZ6wn6B6oCBM1um59-6PZAO8VsFOPlw5w99aWSo0qv2e5L6M3MWcIoEtEixOMTQ">
+                <h3>MOTOROLA Pad 60 Pro</h3>
+                <p class="price">₹24,999</p>
+                <p> 12 GB RAM 256 GB ROM 12.7 inch</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                </div>
+
+                <div class="product-buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+
+            <!-- Watch -->
+            <div class="product-card" data-category="watch">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTVPfO-JJH1nyXbHNIceZPB1Ry5YTYjnYkf5_q1m1B8UouQpJtGc4rcAWz3LX7Fn-T96CDfA1XCkSkqppQwMTvwORMVikfCgRRcLO6-0m5plQxnf8PfBJNNfw">
+                <h3>Noise Pulse 2 Max</h3>
+                <p class="price">₹1,999</p>
+                <p>Bluetooth Calling Smart Watch ,10 Days Battery, 550 NITS Brightness</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <div class="product-buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="watch">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR2jptTussSbds7JrYlMP1yQ_O0SZJ2669z1M4PpAHoxSP58GMp0k9doY6XnxhWckDwyTCd8LEAWEGSctZe-rZA67Z8WeBhdfLq_dEi64ofG6LYkBN1qPSTQg">
+                <h3>GOBOULT (previously Boult) </h3>
+                <p class="price">₹1,899</p>
+                <p>BT Calling, 500Nits Brightness, 150+ Watchfaces Smartwatch</p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                </div>
+
+                <div class="product-buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                    <button class="details-btn">View Details</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section" id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems"></ul>
+        <div class="coupon-area">
+            <input type="text"
+                   id="couponInput"
+                   placeholder="Enter Coupon Code">
+
+            <button id="applyCoupon">
+                Apply Coupon
+            </button>
+        </div>
+
+        <h3>Total: ₹<span id="totalPrice">0</span></h3>
+
+        <button id="checkoutBtn">
+            Proceed to Checkout
+        </button>
+    </section>
+
+    <!-- Wishlist -->
+    <section class="wishlist-section" id="wishlist">
+        <h2>Wishlist</h2>
+
+        <ul id="wishlistItems"></ul>
+    </section>
+
+        <!-- Product Details Modal -->
+    <div id="productModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+        </div>
+
+    </div>
+
+    <!-- Toast -->
+    <div id="toast">
+        Product Added Successfully
+    </div>
+
+    <!-- Back To Top -->
+    <button id="topBtn">
+        ⬆
+    </button>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Contact</h3>
+        <p>Email: shoppingmart123@gmail.com</p>
+        <p>Instagram: shopping_mart_123</p>
+        <p>Phone: 928629XXXX</p>
+        <hr>
+
+        <p>
+            Name: Shiv Kumar |
+            Section: CSE-26 |
+            Roll No: 2503201001073 |
+            Admission No: 2025B01010693 
+        </p>
+
+    </footer>
+    <script src="project.js"></script>
+
+</body>
+</html>
