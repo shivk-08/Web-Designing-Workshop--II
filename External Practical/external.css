@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    background:white;
+    width:100%;
+    max-width:600px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    width:150px;
+}
+
+button{
+    padding:10px 20px;
+    background:#667eea;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#4c5fd7;
+}
+
+.subject-input{
+    margin-bottom:10px;
+}
+
+.subject-input input{
+    width:100%;
+}
+
+#calculateBtn{
+    width:100%;
+    margin-top:15px;
+}
+
+#result{
+    margin-top:20px;
+    padding:15px;
+    border-radius:10px;
+    background:#f4f4f4;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.pass{
+    color:green;
+    font-weight:bold;
+}
+
+.fail{
+    color:red;
+    font-weight:bold;
+}
+
+@media(max-width:600px){
+    .input-section{
+        flex-direction:column;
+    }
+
+    input,button{
+        width:100%;
+    }
+}
